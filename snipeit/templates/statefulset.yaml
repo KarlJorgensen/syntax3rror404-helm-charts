@@ -1,17 +1,22 @@
 ---
 apiVersion: apps/v1
-kind: Deployment
+kind: StatefulSet
 metadata:
   name: {{ include "snipeit.fullname" . }}
   labels:
     {{- include "snipeit.labels" . | nindent 4 }}
 spec:
+  serviceName: {{ include "snipeit.fullname" . }}-headless
   replicas: {{ .Values.replicaCount }}
   selector:
     matchLabels:
       {{- include "snipeit.selectorLabels" . | nindent 6 }}
-  strategy:
+  updateStrategy:
     type: {{ .Values.updateStrategy }}
+    {{- if eq .Values.updateStrategy "RollingUpdate" }}
+    rollingUpdate:
+      partition: 0
+    {{- end }}
   template:
     metadata:
       {{- with .Values.podAnnotations }}
@@ -88,14 +93,10 @@ spec:
           resources:
             {{- toYaml . | nindent 12 }}
           {{- end }}
-          {{- with .Values.volumeMounts }}
           volumeMounts:
+            {{- with .Values.volumeMounts }}
             {{- toYaml . | nindent 12 }}
-          {{- end }}
-      {{- with .Values.volumes }}
-      volumes:
-        {{- toYaml . | nindent 8 }}
-      {{- end }}
+            {{- end }}
       {{- with .Values.nodeSelector }}
       nodeSelector:
         {{- toYaml . | nindent 8 }}
@@ -108,3 +109,15 @@ spec:
       tolerations:
         {{- toYaml . | nindent 8 }}
       {{- end }}
+  volumeClaimTemplates:
+    - metadata:
+        name: snipeit-data
+        labels:
+          {{- include "snipeit.labels" . | nindent 10 }}
+      spec:
+        accessModes:
+          - {{ .Values.snipeit.persistence.accessMode }}
+        storageClassName: {{ .Values.snipeit.persistence.storageClass }}
+        resources:
+          requests:
+            storage: {{ .Values.snipeit.persistence.size }}
