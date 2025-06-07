@@ -1,5 +1,5 @@
 replicaCount: 1
-updateStrategy: Recreate
+updateStrategy: OnDelete
 
 # MariaDB
 mariadb:
