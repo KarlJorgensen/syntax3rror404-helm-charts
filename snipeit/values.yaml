@@ -1,5 +1,5 @@
 replicaCount: 1
-updateStrategy: OnDelete
+updateStrategy: RollingUpdate
 
 # MariaDB
 mariadb:
