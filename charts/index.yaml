@@ -3,7 +3,7 @@ entries:
   mumble:
   - apiVersion: v2
     appVersion: v1.5.735-3
-    created: "2025-06-07T19:13:58.7036336+02:00"
+    created: "2025-06-08T03:42:58.8342904+02:00"
     description: A Helm chart for providing mumble server to kubernetes
     digest: fc93af095dcbbc79f77bfd9990726363566f0177650036f96dceafa7f5add09d
     home: https://github.com/Syntax3rror404/helm-charts
@@ -20,7 +20,7 @@ entries:
     version: 0.9.2
   - apiVersion: v2
     appVersion: v1.5.735-3
-    created: "2025-06-07T19:13:58.703078+02:00"
+    created: "2025-06-08T03:42:58.8317742+02:00"
     description: A Helm chart for providing mumble server to kubernetes
     digest: da50982601f4cab6005b090d25d56628315d6967717ba1de1e33cffdf458e8ef
     home: https://github.com/Syntax3rror404/helm-charts
@@ -37,7 +37,7 @@ entries:
     version: 0.9.1
   - apiVersion: v2
     appVersion: v1.5.735-3
-    created: "2025-06-07T19:13:58.703078+02:00"
+    created: "2025-06-08T03:42:58.82759+02:00"
     description: A Helm chart for providing mumble server to kubernetes
     digest: 75427f931f2be862fbcb4e45c175ab916885bbc70e462d429028a1e4cb186e20
     home: https://github.com/Syntax3rror404/helm-charts
@@ -55,7 +55,7 @@ entries:
   snipeit:
   - apiVersion: v2
     appVersion: 8.1.15
-    created: "2025-06-07T19:13:58.7394299+02:00"
+    created: "2025-06-08T03:42:58.9125619+02:00"
     dependencies:
     - name: mariadb
       repository: https://charts.bitnami.com/bitnami
@@ -78,7 +78,7 @@ entries:
     version: 1.1.8
   - apiVersion: v2
     appVersion: 8.1.15
-    created: "2025-06-07T19:13:58.7359157+02:00"
+    created: "2025-06-08T03:42:58.9073117+02:00"
     dependencies:
     - name: mariadb
       repository: https://charts.bitnami.com/bitnami
@@ -101,7 +101,7 @@ entries:
     version: 1.1.7
   - apiVersion: v2
     appVersion: 8.0.4
-    created: "2025-06-07T19:13:58.7338527+02:00"
+    created: "2025-06-08T03:42:58.9006405+02:00"
     dependencies:
     - name: mariadb
       repository: https://charts.bitnami.com/bitnami
@@ -124,7 +124,7 @@ entries:
     version: 1.1.6
   - apiVersion: v2
     appVersion: 8.0.4
-    created: "2025-06-07T19:13:58.731251+02:00"
+    created: "2025-06-08T03:42:58.8940891+02:00"
     dependencies:
     - name: mariadb
       repository: https://charts.bitnami.com/bitnami
@@ -147,7 +147,7 @@ entries:
     version: 1.1.5
   - apiVersion: v2
     appVersion: 8.0.4
-    created: "2025-06-07T19:13:58.7286142+02:00"
+    created: "2025-06-08T03:42:58.8882922+02:00"
     dependencies:
     - name: mariadb
       repository: https://charts.bitnami.com/bitnami
@@ -170,7 +170,7 @@ entries:
     version: 1.1.4
   - apiVersion: v2
     appVersion: 8.0.4
-    created: "2025-06-07T19:13:58.7254583+02:00"
+    created: "2025-06-08T03:42:58.8827851+02:00"
     dependencies:
     - name: mariadb
       repository: https://charts.bitnami.com/bitnami
@@ -190,7 +190,7 @@ entries:
     version: 1.1.3
   - apiVersion: v2
     appVersion: 8.0.4
-    created: "2025-06-07T19:13:58.7233938+02:00"
+    created: "2025-06-08T03:42:58.8757746+02:00"
     dependencies:
     - name: mariadb
       repository: https://charts.bitnami.com/bitnami
@@ -210,7 +210,7 @@ entries:
     version: 1.1.2
   - apiVersion: v2
     appVersion: 8.0.4
-    created: "2025-06-07T19:13:58.7202873+02:00"
+    created: "2025-06-08T03:42:58.8702639+02:00"
     dependencies:
     - name: mariadb
       repository: https://charts.bitnami.com/bitnami
@@ -230,7 +230,7 @@ entries:
     version: 1.1.1
   - apiVersion: v2
     appVersion: 8.0.4
-    created: "2025-06-07T19:13:58.7177047+02:00"
+    created: "2025-06-08T03:42:58.8647608+02:00"
     dependencies:
     - name: mariadb
       repository: https://charts.bitnami.com/bitnami
@@ -250,7 +250,7 @@ entries:
     version: 1.1.0
   - apiVersion: v2
     appVersion: 8.0.4
-    created: "2025-06-07T19:13:58.7145717+02:00"
+    created: "2025-06-08T03:42:58.8597491+02:00"
     dependencies:
     - name: mariadb
       repository: https://charts.bitnami.com/bitnami
@@ -270,7 +270,7 @@ entries:
     version: 1.0.9
   - apiVersion: v2
     appVersion: 8.0.4
-    created: "2025-06-07T19:13:58.7124802+02:00"
+    created: "2025-06-08T03:42:58.8528048+02:00"
     dependencies:
     - name: mariadb
       repository: https://charts.bitnami.com/bitnami
@@ -290,7 +290,7 @@ entries:
     version: 1.0.8
   - apiVersion: v2
     appVersion: 8.0.4
-    created: "2025-06-07T19:13:58.7093413+02:00"
+    created: "2025-06-08T03:42:58.8462973+02:00"
     dependencies:
     - name: mariadb
       repository: https://charts.bitnami.com/bitnami
@@ -310,7 +310,7 @@ entries:
     version: 1.0.7
   - apiVersion: v2
     appVersion: 8.0.4
-    created: "2025-06-07T19:13:58.7062191+02:00"
+    created: "2025-06-08T03:42:58.8407895+02:00"
     dependencies:
     - name: mariadb
       repository: https://charts.bitnami.com/bitnami
@@ -331,7 +331,28 @@ entries:
   teamspeak:
   - apiVersion: v2
     appVersion: 3.13.7
-    created: "2025-06-07T19:13:58.7439376+02:00"
+    created: "2025-06-08T03:42:58.9277566+02:00"
+    dependencies:
+    - name: mariadb
+      repository: https://charts.bitnami.com/bitnami
+      version: 20.5.7
+    description: A Helm chart for providing teamspeak server to kubernetes
+    digest: 0dba8ef9d8d21eca61d3ab5cf1c7373b96fb6f29d940e377548817216d6004df
+    home: https://github.com/Syntax3rror404/helm-charts
+    icon: https://upload.wikimedia.org/wikipedia/commons/e/ec/TeamSpeak_logo_renovado.png
+    keywords:
+    - teamspeak
+    - voip
+    name: teamspeak
+    sources:
+    - https://hub.docker.com/_/teamspeak/
+    type: application
+    urls:
+    - teamspeak-0.9.3.tgz
+    version: 0.9.3
+  - apiVersion: v2
+    appVersion: 3.13.7
+    created: "2025-06-08T03:42:58.925116+02:00"
     dependencies:
     - name: mariadb
       repository: https://charts.bitnami.com/bitnami
@@ -352,7 +373,7 @@ entries:
     version: 0.9.2
   - apiVersion: v2
     appVersion: 3.13.7
-    created: "2025-06-07T19:13:58.7419342+02:00"
+    created: "2025-06-08T03:42:58.9193823+02:00"
     dependencies:
     - name: mariadb
       repository: https://charts.bitnami.com/bitnami
@@ -371,4 +392,4 @@ entries:
     urls:
     - teamspeak-0.9.1.tgz
     version: 0.9.1
-generated: "2025-06-07T19:13:58.702018+02:00"
+generated: "2025-06-08T03:42:58.8215836+02:00"
