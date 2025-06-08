@@ -42,5 +42,9 @@ service:
   type: ClusterIP
   externalIPs: []
 
+headlessService:
+  type: ClusterIP
+  externalIPs: []
+
 # Custom Labels
 customLabels: {}
