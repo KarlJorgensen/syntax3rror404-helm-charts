@@ -50,14 +50,14 @@ spec:
             - name: TS3SERVER_DB_WAITUNTILREADY
               value: "30"
           volumeMounts:
-            - name: teamspeak-data
+            - name: data
               mountPath: /var/ts3server
           resources:
             {{- toYaml .Values.teamspeak.resources | nindent 12 }}
   {{- if .Values.teamspeak.persistence.enabled }}
   volumeClaimTemplates:
     - metadata:
-        name: teamspeak-data
+        name: data
         labels:
           {{- include "teamspeak.labels" . | nindent 10 }}
           {{- with .Values.customLabels }}
@@ -74,6 +74,6 @@ spec:
             storage: {{ .Values.teamspeak.persistence.size | quote }}
   {{- else }}
       volumes:
-        - name: teamspeak-data
+        - name: data
           emptyDir: {}
   {{- end }}
