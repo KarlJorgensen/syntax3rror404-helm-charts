@@ -62,7 +62,17 @@ spec:
 
             echo "Create secret..."
             kubectl create secret generic $SECRET_NAME --from-literal=APP_KEY="$APP_KEY"
-            echo "Secret created"
+            
+            echo "Add labels to secret..."
+            kubectl label secret $SECRET_NAME \
+              "helm.sh/chart={{ include "snipeit.chart" . }}" \
+              "app.kubernetes.io/name={{ include "snipeit.name" . }}" \
+              "app.kubernetes.io/instance={{ .Release.Name }}" \
+              {{- if .Chart.AppVersion }}
+              "app.kubernetes.io/version={{ .Chart.AppVersion }}" \
+              {{- end }}
+              "app.kubernetes.io/managed-by={{ .Release.Service }}"
+            echo "Secret created and labeled"
 
         volumeMounts:
         - name: shared-data
