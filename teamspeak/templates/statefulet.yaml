@@ -59,7 +59,7 @@ spec:
     - metadata:
         name: data
         labels:
-          {{- include "teamspeak.labels" . | nindent 10 }}
+          {{- include "teamspeak.selectorLabels" . | nindent 10 }}
           {{- with .Values.customLabels }}
           {{- toYaml . | nindent 10 }}
           {{- end }}
