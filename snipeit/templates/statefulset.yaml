@@ -113,7 +113,7 @@ spec:
     - metadata:
         name: snipeit-data
         labels:
-          {{- include "snipeit.labels" . | nindent 10 }}
+          {{- include "snipeit.selectorLabels" . | nindent 10 }}
       spec:
         accessModes:
           - {{ .Values.snipeit.persistence.accessMode }}

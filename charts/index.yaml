@@ -3,7 +3,7 @@ entries:
   mumble:
   - apiVersion: v2
     appVersion: v1.5.735-3
-    created: "2025-07-03T16:19:16.7247963+02:00"
+    created: "2025-07-03T20:54:15.1224814+02:00"
     description: A Helm chart for providing mumble server to kubernetes
     digest: fc93af095dcbbc79f77bfd9990726363566f0177650036f96dceafa7f5add09d
     home: https://github.com/Syntax3rror404/helm-charts
@@ -20,7 +20,7 @@ entries:
     version: 0.9.2
   - apiVersion: v2
     appVersion: v1.5.735-3
-    created: "2025-07-03T16:19:16.7247963+02:00"
+    created: "2025-07-03T20:54:15.1198075+02:00"
     description: A Helm chart for providing mumble server to kubernetes
     digest: da50982601f4cab6005b090d25d56628315d6967717ba1de1e33cffdf458e8ef
     home: https://github.com/Syntax3rror404/helm-charts
@@ -37,7 +37,7 @@ entries:
     version: 0.9.1
   - apiVersion: v2
     appVersion: v1.5.735-3
-    created: "2025-07-03T16:19:16.7232394+02:00"
+    created: "2025-07-03T20:54:15.1160956+02:00"
     description: A Helm chart for providing mumble server to kubernetes
     digest: 75427f931f2be862fbcb4e45c175ab916885bbc70e462d429028a1e4cb186e20
     home: https://github.com/Syntax3rror404/helm-charts
@@ -55,7 +55,30 @@ entries:
   snipeit:
   - apiVersion: v2
     appVersion: 8.1.17
-    created: "2025-07-03T16:19:16.7398171+02:00"
+    created: "2025-07-03T20:54:15.1558096+02:00"
+    dependencies:
+    - name: mariadb
+      repository: oci://registry-1.docker.io/bitnamicharts
+      version: 21.0.1
+    description: A Helm chart for providing snipe-it to kubernetes
+    digest: 709a1319559bb9831d456279b2157ee9435bff10bbd6aac1037a2f10dbe1a301
+    home: https://github.com/Syntax3rror404/helm-charts
+    icon: https://github.com/snipe/snipe-it/blob/eb9cfbaed6fc830e9b114c625896a636842f2d1a/public/img/demo/snipe-logo-bug.png?raw=true
+    keywords:
+    - snipeit
+    - inventory
+    - asset management
+    name: snipeit
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/mariadb
+    - https://github.com/snipe/snipe-it
+    type: application
+    urls:
+    - snipeit-1.2.5.tgz
+    version: 1.2.5
+  - apiVersion: v2
+    appVersion: 8.1.17
+    created: "2025-07-03T20:54:15.1533044+02:00"
     dependencies:
     - name: mariadb
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -78,7 +101,7 @@ entries:
     version: 1.2.4
   - apiVersion: v2
     appVersion: 8.1.17
-    created: "2025-07-03T16:19:16.7378173+02:00"
+    created: "2025-07-03T20:54:15.1470253+02:00"
     dependencies:
     - name: mariadb
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -101,7 +124,7 @@ entries:
     version: 1.2.3
   - apiVersion: v2
     appVersion: 8.1.17
-    created: "2025-07-03T16:19:16.7338152+02:00"
+    created: "2025-07-03T20:54:15.14138+02:00"
     dependencies:
     - name: mariadb
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -124,7 +147,7 @@ entries:
     version: 1.2.2
   - apiVersion: v2
     appVersion: 8.1.16
-    created: "2025-07-03T16:19:16.7313109+02:00"
+    created: "2025-07-03T20:54:15.1350414+02:00"
     dependencies:
     - name: mariadb
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -147,7 +170,7 @@ entries:
     version: 1.2.1
   - apiVersion: v2
     appVersion: 8.1.16
-    created: "2025-07-03T16:19:16.7283095+02:00"
+    created: "2025-07-03T20:54:15.1287703+02:00"
     dependencies:
     - name: mariadb
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -171,7 +194,7 @@ entries:
   teamspeak:
   - apiVersion: v2
     appVersion: 3.13.7
-    created: "2025-07-03T16:19:16.7483226+02:00"
+    created: "2025-07-03T20:54:15.1751963+02:00"
     dependencies:
     - name: mariadb
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -192,7 +215,7 @@ entries:
     version: 0.9.8
   - apiVersion: v2
     appVersion: 3.13.7
-    created: "2025-07-03T16:19:16.7453227+02:00"
+    created: "2025-07-03T20:54:15.1681957+02:00"
     dependencies:
     - name: mariadb
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -213,7 +236,7 @@ entries:
     version: 0.9.7
   - apiVersion: v2
     appVersion: 3.13.7
-    created: "2025-07-03T16:19:16.7428167+02:00"
+    created: "2025-07-03T20:54:15.1626884+02:00"
     dependencies:
     - name: mariadb
       repository: https://charts.bitnami.com/bitnami
@@ -232,4 +255,4 @@ entries:
     urls:
     - teamspeak-0.9.6.tgz
     version: 0.9.6
-generated: "2025-07-03T16:19:16.7232394+02:00"
+generated: "2025-07-03T20:54:15.1095688+02:00"
