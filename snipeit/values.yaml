@@ -3,6 +3,9 @@ updateStrategy: RollingUpdate
 
 # MariaDB
 mariadb:
+  # enabled: If enabled, then a new install of mariadb will be
+  # included.
+  enabled: true
   global:
     defaultStorageClass: "longhorn"
   auth:
@@ -10,6 +13,74 @@ mariadb:
     database: "snipeit"
     username: "snipeit"
     password: "snipeitdbsecret"
+
+# externalDB: Use an "external" database (i.e. not supplied by this
+# chart).
+externalDB:
+  # enabled: Whether to use an external database. If set, then
+  # mariadb.enabled must be set to false.
+  enabled: false
+
+  # username: See pod.spec.containers.env for syntax.
+  username: {}
+  # E.g.
+  # value: "TheUserNameHere"
+  # or
+  # valueFrom:
+  #   secretKeyRef:
+  #     name: name-of-secret
+  #     key: username
+  # or:
+  # valueFrom:
+  #   configMapKeyRef:
+  #     name: name-of-configmap
+  #     key: username
+
+  # password: See pod.spec.containers.env for syntax.
+  password: {}
+  # E.g.
+  # value: "If the password goes here it will be visible in the pod spec"
+  # or:
+  # valueFrom:
+  #   secretKeyRef:
+  #     name: name-of-secret
+  #     key: password
+  # or (you really should not be storing passwords in ConfigMaps,
+  # but it is _your_ system...):
+  # valueFrom:
+  #   configMapKeyRef:
+  #     name: name-of-configmap
+  #     key: password
+
+  # database: See pod.spec.containers.env for syntax.
+  database: {}
+  # E.g.
+  # value: "NameOfDatabase"
+  # or
+  # valueFrom:
+  #   secretKeyRef:
+  #     name: name-of-secret
+  #     key: dbname
+  # or:
+  # valueFrom:
+  #   configMapKeyRef:
+  #     name: name-of-configmap
+  #     key: dbname
+
+  # host: See pod.spec.containers.env for syntax.
+  host: {}
+  # E.g.
+  # value: "someDnsName.example.com"
+  # or
+  # valueFrom:
+  #   secretKeyRef:
+  #     name: name-of-secret
+  #     key: user
+  # or:
+  # valueFrom:
+  #   configMapKeyRef:
+  #     name: name-of-configmap
+  #     key: user
 
 # snipeit config
 snipeit:
