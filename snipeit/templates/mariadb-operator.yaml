@@ -60,6 +60,16 @@ spec:
   requeueInterval: 10h
   retryInterval: 30s
 ---
+apiVersion: v1
+kind: Secret
+metadata:
+  name: user-{{ .Values.mariadbOperator.username }}
+  namespace: {{ if .Values.mariadbOperator.useExisting.enabled }}{{ .Values.mariadbOperator.useExisting.namespace }}{{ else }}{{ .Release.Namespace }}{{ end }}
+type: Opaque
+stringData:
+  password: "{{ .Values.mariadbOperator.password }}"
+{{- end }}
+---
 apiVersion: k8s.mariadb.com/v1alpha1
 kind: Grant
 metadata:
