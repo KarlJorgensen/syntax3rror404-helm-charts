@@ -288,7 +288,3 @@ If you're migrating from the previous version using Bitnami MariaDB as a depende
 - **Issues**: https://github.com/Syntax3rror404/helm-charts/issues
 - **Source Code**: https://github.com/Syntax3rror404/helm-charts
 - **Snipe-IT Project**: https://github.com/snipe/snipe-it
-
-## License
-
-This Helm chart is provided as-is. Please refer to the Snipe-IT project for application licensing information.
