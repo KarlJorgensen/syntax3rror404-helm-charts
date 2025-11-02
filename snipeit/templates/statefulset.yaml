@@ -78,6 +78,7 @@ spec:
               value: "{{- .Values.mariadbOperator.password }}"
             - name: DB_DATABASE
               value: "{{- .Values.mariadbOperator.database }}"
+              # host = servicename.namespace.svc
             - name: DB_HOST
               value: "{{ if .Values.mariadbOperator.useExisting.enabled }}{{ .Values.mariadbOperator.useExisting.mariaDbRef }}-internal.{{ .Values.mariadbOperator.useExisting.namespace }}.svc{{ else }}mariadb-{{ .Release.Name }}-internal.{{ .Release.Namespace }}.svc{{ end }}"
             {{- end }}

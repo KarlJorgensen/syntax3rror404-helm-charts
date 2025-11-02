@@ -6,7 +6,7 @@ home: https://github.com/Syntax3rror404/helm-charts
 icon: https://upload.wikimedia.org/wikipedia/commons/e/ec/TeamSpeak_logo_renovado.png
 
 type: application
-version: 0.9.10
+version: 1.0.0
 appVersion: 3.13.7
 
 keywords:
@@ -15,8 +15,3 @@ keywords:
 
 sources:
   - https://hub.docker.com/_/teamspeak/
-
-dependencies:
-  - name: mariadb
-    version: "21.0.3"
-    repository: "oci://registry-1.docker.io/bitnamicharts"

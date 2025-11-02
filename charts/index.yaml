@@ -3,7 +3,7 @@ entries:
   mumble:
   - apiVersion: v2
     appVersion: v1.5.735-3
-    created: "2025-11-03T00:29:20.017228+01:00"
+    created: "2025-11-03T00:52:42.792899+01:00"
     description: A Helm chart for providing mumble server to kubernetes
     digest: fc93af095dcbbc79f77bfd9990726363566f0177650036f96dceafa7f5add09d
     home: https://github.com/Syntax3rror404/helm-charts
@@ -20,7 +20,7 @@ entries:
     version: 0.9.2
   - apiVersion: v2
     appVersion: v1.5.735-3
-    created: "2025-11-03T00:29:20.017044+01:00"
+    created: "2025-11-03T00:52:42.792682+01:00"
     description: A Helm chart for providing mumble server to kubernetes
     digest: da50982601f4cab6005b090d25d56628315d6967717ba1de1e33cffdf458e8ef
     home: https://github.com/Syntax3rror404/helm-charts
@@ -37,7 +37,7 @@ entries:
     version: 0.9.1
   - apiVersion: v2
     appVersion: v1.5.735-3
-    created: "2025-11-03T00:29:20.016847+01:00"
+    created: "2025-11-03T00:52:42.792481+01:00"
     description: A Helm chart for providing mumble server to kubernetes
     digest: 75427f931f2be862fbcb4e45c175ab916885bbc70e462d429028a1e4cb186e20
     home: https://github.com/Syntax3rror404/helm-charts
@@ -55,7 +55,7 @@ entries:
   snipeit:
   - apiVersion: v2
     appVersion: 8.3.4
-    created: "2025-11-03T00:29:20.059324+01:00"
+    created: "2025-11-03T00:52:42.835879+01:00"
     description: A Helm chart for providing snipe-it to kubernetes
     digest: 09952fa4f0c73efd16d5e2dda58bd59218a39119074267f1d6d6a6a5a7e6e95c
     home: https://github.com/Syntax3rror404/helm-charts
@@ -73,7 +73,7 @@ entries:
     version: 2.0.6
   - apiVersion: v2
     appVersion: 8.3.4
-    created: "2025-11-03T00:29:20.059045+01:00"
+    created: "2025-11-03T00:52:42.835575+01:00"
     description: A Helm chart for providing snipe-it to kubernetes
     digest: a37e8c3c5b2136acea0caf694c182da804e9f110c125beff53ce426d557058df
     home: https://github.com/Syntax3rror404/helm-charts
@@ -91,7 +91,7 @@ entries:
     version: 2.0.5
   - apiVersion: v2
     appVersion: 8.3.4
-    created: "2025-11-03T00:29:20.058756+01:00"
+    created: "2025-11-03T00:52:42.835274+01:00"
     description: A Helm chart for providing snipe-it to kubernetes
     digest: bbda68fa2c4225a5f758bc1f1fdb32cc4e459ae0dce7794f3d13c1f6aef4dd9e
     home: https://github.com/Syntax3rror404/helm-charts
@@ -109,7 +109,7 @@ entries:
     version: 2.0.4
   - apiVersion: v2
     appVersion: 8.3.4
-    created: "2025-11-03T00:29:20.058466+01:00"
+    created: "2025-11-03T00:52:42.834944+01:00"
     description: A Helm chart for providing snipe-it to kubernetes
     digest: befacf511e7d9800e00e2044e1db7d0e1481c6e1be3127fe313ef9447cf00bdc
     home: https://github.com/Syntax3rror404/helm-charts
@@ -127,7 +127,7 @@ entries:
     version: 2.0.3
   - apiVersion: v2
     appVersion: 8.3.4
-    created: "2025-11-03T00:29:20.055993+01:00"
+    created: "2025-11-03T00:52:42.832297+01:00"
     description: A Helm chart for providing snipe-it to kubernetes
     digest: 067b77ac85e22813c70f130b1d53c2073a9fc82cc3e26106d54a24a1c036974d
     home: https://github.com/Syntax3rror404/helm-charts
@@ -145,7 +145,7 @@ entries:
     version: 2.0.2
   - apiVersion: v2
     appVersion: 8.3.4
-    created: "2025-11-03T00:29:20.053671+01:00"
+    created: "2025-11-03T00:52:42.82986+01:00"
     description: A Helm chart for providing snipe-it to kubernetes
     digest: edc2dc561263e43b690899e16475819e3e7cd11eb38b251953789227c8df10b7
     home: https://github.com/Syntax3rror404/helm-charts
@@ -163,7 +163,7 @@ entries:
     version: 2.0.1
   - apiVersion: v2
     appVersion: 8.3.4
-    created: "2025-11-03T00:29:20.051056+01:00"
+    created: "2025-11-03T00:52:42.827289+01:00"
     description: A Helm chart for providing snipe-it to kubernetes
     digest: cafbfdeea991f7be026d16c3ab1a736323bbbbd6488956185b05852bb5dd6a35
     home: https://github.com/Syntax3rror404/helm-charts
@@ -181,7 +181,7 @@ entries:
     version: 2.0.0
   - apiVersion: v2
     appVersion: 8.2.1
-    created: "2025-11-03T00:29:20.026527+01:00"
+    created: "2025-11-03T00:52:42.802928+01:00"
     dependencies:
     - name: mariadb
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -204,7 +204,7 @@ entries:
     version: 1.2.10
   - apiVersion: v2
     appVersion: 8.2.0
-    created: "2025-11-03T00:29:20.048681+01:00"
+    created: "2025-11-03T00:52:42.824919+01:00"
     dependencies:
     - name: mariadb
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -227,7 +227,7 @@ entries:
     version: 1.2.9
   - apiVersion: v2
     appVersion: 8.2.0
-    created: "2025-11-03T00:29:20.046018+01:00"
+    created: "2025-11-03T00:52:42.822167+01:00"
     dependencies:
     - name: mariadb
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -250,7 +250,7 @@ entries:
     version: 1.2.8
   - apiVersion: v2
     appVersion: 8.2.0
-    created: "2025-11-03T00:29:20.04366+01:00"
+    created: "2025-11-03T00:52:42.819634+01:00"
     dependencies:
     - name: mariadb
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -273,7 +273,7 @@ entries:
     version: 1.2.7
   - apiVersion: v2
     appVersion: 8.1.18
-    created: "2025-11-03T00:29:20.040864+01:00"
+    created: "2025-11-03T00:52:42.816782+01:00"
     dependencies:
     - name: mariadb
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -296,7 +296,7 @@ entries:
     version: 1.2.6
   - apiVersion: v2
     appVersion: 8.1.17
-    created: "2025-11-03T00:29:20.038347+01:00"
+    created: "2025-11-03T00:52:42.814034+01:00"
     dependencies:
     - name: mariadb
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -319,7 +319,7 @@ entries:
     version: 1.2.5
   - apiVersion: v2
     appVersion: 8.1.17
-    created: "2025-11-03T00:29:20.035375+01:00"
+    created: "2025-11-03T00:52:42.811397+01:00"
     dependencies:
     - name: mariadb
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -342,7 +342,7 @@ entries:
     version: 1.2.4
   - apiVersion: v2
     appVersion: 8.1.17
-    created: "2025-11-03T00:29:20.032372+01:00"
+    created: "2025-11-03T00:52:42.808449+01:00"
     dependencies:
     - name: mariadb
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -365,7 +365,7 @@ entries:
     version: 1.2.3
   - apiVersion: v2
     appVersion: 8.1.17
-    created: "2025-11-03T00:29:20.029645+01:00"
+    created: "2025-11-03T00:52:42.805803+01:00"
     dependencies:
     - name: mariadb
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -388,7 +388,7 @@ entries:
     version: 1.2.2
   - apiVersion: v2
     appVersion: 8.1.16
-    created: "2025-11-03T00:29:20.023764+01:00"
+    created: "2025-11-03T00:52:42.799955+01:00"
     dependencies:
     - name: mariadb
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -411,7 +411,7 @@ entries:
     version: 1.2.1
   - apiVersion: v2
     appVersion: 8.1.16
-    created: "2025-11-03T00:29:20.020606+01:00"
+    created: "2025-11-03T00:52:42.796623+01:00"
     dependencies:
     - name: mariadb
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -435,7 +435,24 @@ entries:
   teamspeak:
   - apiVersion: v2
     appVersion: 3.13.7
-    created: "2025-11-03T00:29:20.06173+01:00"
+    created: "2025-11-03T00:52:42.847265+01:00"
+    description: A Helm chart for providing teamspeak server to kubernetes
+    digest: 2cc9a41c0bc409b14ac6370d7b0361976c8525733893f9051aea9cf7f5c77243
+    home: https://github.com/Syntax3rror404/helm-charts
+    icon: https://upload.wikimedia.org/wikipedia/commons/e/ec/TeamSpeak_logo_renovado.png
+    keywords:
+    - teamspeak
+    - voip
+    name: teamspeak
+    sources:
+    - https://hub.docker.com/_/teamspeak/
+    type: application
+    urls:
+    - teamspeak-1.0.0.tgz
+    version: 1.0.0
+  - apiVersion: v2
+    appVersion: 3.13.7
+    created: "2025-11-03T00:52:42.838212+01:00"
     dependencies:
     - name: mariadb
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -456,7 +473,7 @@ entries:
     version: 0.9.10
   - apiVersion: v2
     appVersion: 3.13.7
-    created: "2025-11-03T00:29:20.070796+01:00"
+    created: "2025-11-03T00:52:42.84712+01:00"
     dependencies:
     - name: mariadb
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -477,7 +494,7 @@ entries:
     version: 0.9.9
   - apiVersion: v2
     appVersion: 3.13.7
-    created: "2025-11-03T00:29:20.068465+01:00"
+    created: "2025-11-03T00:52:42.844832+01:00"
     dependencies:
     - name: mariadb
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -498,7 +515,7 @@ entries:
     version: 0.9.8
   - apiVersion: v2
     appVersion: 3.13.7
-    created: "2025-11-03T00:29:20.066333+01:00"
+    created: "2025-11-03T00:52:42.842723+01:00"
     dependencies:
     - name: mariadb
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -519,7 +536,7 @@ entries:
     version: 0.9.7
   - apiVersion: v2
     appVersion: 3.13.7
-    created: "2025-11-03T00:29:20.063885+01:00"
+    created: "2025-11-03T00:52:42.840354+01:00"
     dependencies:
     - name: mariadb
       repository: https://charts.bitnami.com/bitnami
@@ -538,4 +555,4 @@ entries:
     urls:
     - teamspeak-0.9.6.tgz
     version: 0.9.6
-generated: "2025-11-03T00:29:20.016566+01:00"
+generated: "2025-11-03T00:52:42.792183+01:00"

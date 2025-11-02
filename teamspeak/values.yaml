@@ -25,17 +25,28 @@ teamspeak:
   #    cpu: 200m
   #    memory: 256Mi
 
-# Database Configuration
-mariadb:
-  enabled: true
-  auth:
-    rootPassword: ""
-    database: teamspeak
-    username: ""
-    password: ""
-    
-  global:
-    defaultStorageClass: ""
+# Use mariadbOperator for creating database, user, grant etc in defined namespace
+# This requires a preinstalled mariadb-operator
+# https://github.com/mariadb-operator/mariadb-operator
+mariadbOperator:
+  # enable creating crs for this app
+  enabled: false
+  # Database created by this chart
+  database: teamspeak
+  # Username created by this chart
+  username: teamspeak
+  # Password created by this chart
+  password: teamspeaksecret
+  # storageClass for mariadb (not relevant if mariadbOperator.useExisting is used)
+  storageClass: longhorn
+  # use a existing mariadb managed by operator and will not create a new mariadb instance for example if you have a one big mariadb or galera
+  useExisting:
+    # enable use of existing mariadb instance
+    enabled: false
+    # namespace with existing mariadb
+    namespace: {}
+    # mariadb ref (name in mariadb cr) from existing mariadb
+    mariaDbRef: {}
 
 # Network Configuration
 service:
