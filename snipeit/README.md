@@ -2,7 +2,11 @@
 [Snipeit-IT](http://www.snipeitapp.com) is open source software. Transparency, security and oversight is at the heart of everything we do. No vendor lock-in again, ever.
 
 ## introduction
-This helm chart uses for the database the bitnami mariadb database as dependency.
+This helm chart uses for the database the official [mariadb-operator](https://github.com/mariadb-operator/mariadb-operator)
+
+The mariadb-operator needs to be preinstalled on your k8s cluster
+
+You can use a existing mariadb created from the mariadb-operator or helm will create one for you. 
 
 Also the official container image from snipe is used.
 
@@ -28,11 +32,6 @@ For all possible values please take a look to the values file.
 
 Value    | Default  | Description
 -------- | -------- | --------
-mariadb.global.defaultStorageClass   | "longhorn"   | storage class for mariadb
-mariadb.auth.rootPassword   | "adminsecret"   | root password to be generated for mariadb
-mariadb.auth.database  | "snipeit"   | mariadb database name to be created for snipeit app
-mariadb.auth.username  | "snipeit"   | mariadb database user to be created for snipeit app
-mariadb.auth.password  | "snipeitdbsecret"   | mariadb database password to be created for snipeit app
 snipeit.config.persistence.storageClass   | "longhorn"   | storage class for snipeit
 snipeit.config.persistence.size   | "2Gi"   | storage space for snipeit
 snipeit.config.url   | "http://snipeit.example.com"   | App url for snipeit 
