@@ -14,7 +14,7 @@ spec:
 
   storage:
     size: 10Gi
-    storageClassName: {{ .Values.mariadbOperator.storageClass | default "longhorn-prod" }}
+    storageClassName: {{ .Values.mariadbOperator.storageClass }}
 
   podSecurityContext:
     runAsNonRoot: true

@@ -15,6 +15,13 @@ The chart supports two database configuration methods:
 
 **Important**: The MariaDB Operator must be pre-installed on your Kubernetes cluster if you choose option 1.
 
+In short: 
+```bash
+helm repo add mariadb-operator https://helm.mariadb.com/mariadb-operator
+helm install mariadb-operator-crds mariadb-operator/mariadb-operator-crds
+helm install mariadb-operator mariadb-operator/mariadb-operator
+```
+
 ### Key Features
 
 - Automatic Laravel APP_KEY generation and secure storage as Kubernetes secret
