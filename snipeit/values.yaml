@@ -1,18 +1,28 @@
 replicaCount: 1
 updateStrategy: RollingUpdate
 
-# MariaDB
-mariadb:
-  # enabled: If enabled, then a new install of mariadb will be
-  # included.
-  enabled: true
-  global:
-    defaultStorageClass: "longhorn"
-  auth:
-    rootPassword: adminsecret
-    database: "snipeit"
-    username: "snipeit"
-    password: "snipeitdbsecret"
+# Use mariadbOperator for creating database, user, grant etc in defined namespace
+# This requires a preinstalled mariadb-operator
+# https://github.com/mariadb-operator/mariadb-operator
+mariadbOperator:
+  # enable creating crs for this app
+  enabled: false
+  # Database created by this chart
+  database: snipeit
+  # Username created by this chart
+  username: snipeit
+  # Password created by this chart
+  password: snipeitdbsecret
+  # storageClass for mariadb (not relevant if mariadbOperator.useExisting is used)
+  storageClass: longhorn
+  # use a existing mariadb managed by operator and will not create a new mariadb instance for example if you have a one big mariadb or galera
+  useExisting:
+    # enable use of existing mariadb instance
+    enabled: false
+    # namespace with existing mariadb
+    namespace: {}
+    # mariadb ref (name in mariadb cr) from existing mariadb
+    mariaDbRef: {}
 
 # externalDB: Use an "external" database (i.e. not supplied by this
 # chart).
@@ -99,7 +109,7 @@ snipeit:
   image:
     repository: docker.io/snipe/snipe-it
     pullPolicy: IfNotPresent
-    tag: "v8.2.1-alpine"
+    tag: "v8.3.4-alpine"
 
 imagePullSecrets: []
 nameOverride: ""

@@ -54,30 +54,32 @@ spec:
           image: "{{ .Values.snipeit.image.repository }}:{{ .Values.snipeit.image.tag | default .Chart.AppVersion }}"
           imagePullPolicy: {{ .Values.snipeit.image.pullPolicy }}
           env:
-            {{- if and .Values.mariadb.enabled .Values.externalDB.enabled }}
-            {{- fail "You have enabled BOTH .Values.mariadb.enabled and .Values.externalDB.enabled. That is wrong. Please choose one or the other." }}
+            {{- if and .Values.externalDB.enabled .Values.mariadbOperator.enabled }}
+            {{- fail "You have enabled BOTH .Values.externalDB.enabled and .Values.mariadbOperator.enabled. That is wrong. Please choose one or the other." }}
             {{- end }}
-            {{- if not (or .Values.mariadb.enabled .Values.externalDB.enabled) }}
-            {{ fail "You need to enable exactly ONE of .Values.mariadb.enabled and .Values.externalDB.enabled so we know how to connect to the database." }}
+            {{- if not (or .Values.externalDB.enabled .Values.mariadbOperator.enabled) }}
+            {{- fail "You need to enable exactly ONE of .Values.externalDB.enabled or .Values.mariadbOperator.enabled so we know how to connect to the database." }}
             {{- end }}
-            {{- if .Values.mariadb.enabled }}
-            - name: DB_USERNAME 
-              value: "{{ .Values.mariadb.auth.username }}"
-            - name: DB_PASSWORD 
-              value: "{{ .Values.mariadb.auth.password }}"
-            - name: DB_DATABASE 
-              value: "{{ .Values.mariadb.auth.database }}"
-            - name: DB_HOST 
-              value: "{{ .Release.Name }}-mariadb"
-            {{- else if .Values.externalDB.enabled }}
+            
+            {{- if .Values.externalDB.enabled }}
             - name: DB_USERNAME
-              {{- .Values.externalDB.username | toYaml | nindent 14 }}
+              value: "{{- .Values.externalDB.username }}"
             - name: DB_PASSWORD
-              {{- .Values.externalDB.password | toYaml | nindent 14 }}
+              value: "{{- .Values.externalDB.password }}"
             - name: DB_DATABASE
-              {{- .Values.externalDB.database | toYaml | nindent 14 }}
+              value: "{{- .Values.externalDB.database }}"
             - name: DB_HOST
-              {{- .Values.externalDB.host | toYaml | nindent 14 }}
+              value: "{{- .Values.externalDB.host }}"
+            {{- end }}
+            {{- if .Values.mariadbOperator.enabled }}
+            - name: DB_USERNAME
+              value: "{{- .Values.mariadbOperator.username }}"
+            - name: DB_PASSWORD
+              value: "{{- .Values.mariadbOperator.password }}"
+            - name: DB_DATABASE
+              value: "{{- .Values.mariadbOperator.database }}"
+            - name: DB_HOST
+              value: "{{ if .Values.mariadbOperator.useExisting.enabled }}{{ .Values.mariadbOperator.useExisting.mariaDbRef }}-internal.{{ .Values.mariadbOperator.useExisting.namespace }}.svc{{ else }}mariadb-{{ .Release.Name }}-internal.{{ .Release.Namespace }}.svc{{ end }}"
             {{- end }}
             - name: APP_KEY 
               valueFrom:
