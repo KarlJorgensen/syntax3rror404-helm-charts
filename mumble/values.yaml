@@ -11,6 +11,7 @@ customLabels: {}
 
 service:
   type: ClusterIP
+  externalIPs: []
   ports:
     - name: mumble-tcp
       port: 64738
@@ -23,15 +24,17 @@ service:
 
 persistence:
   enabled: true
-  storageClass: ""
+  storageClass: "longhorn-staging"
   accessModes:
     - ReadWriteOnce
   size: 1Gi
-  existingClaim: ""
 
 config: {}
   # server_password: "pass"
-  # db_host: "db"
+  # welcometext: "Welcome to my Mumble server"
+  # registerName: "My Mumble Server"
+  # bandwidth: "130000"
+  # users: "100"
 
 environment:
   acceptUnknownSettings: false
