@@ -1,6 +1,6 @@
 # helm-charts/mumble
 
-[Mumble](https://www.mumble.info/) is a free, open-source, low-latency, high-quality voice chat application primarily intended for gaming. Mumble uses a client-server architecture, where users connect to a central server.
+Mumble is a free, open-source, low-latency, high-quality voice chat application primarily intended for gaming. Mumble uses a client-server architecture, where users connect to a central server.
 
 ## Introduction
 
